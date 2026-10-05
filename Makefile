@@ -52,3 +52,6 @@ forktest: $(ALL)
 
 clean:
 	rm -f bin/*
+
+killtest: $(ALL)
+	$(CC) $(FLAGS) $(INCLUDE) $(ALLOBJS) test/kill_test.c -o bin/kill_test
